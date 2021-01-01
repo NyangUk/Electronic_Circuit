@@ -1,0 +1,747 @@
+
+GccApplication28.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000042  00800100  00000474  00000508  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000474  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000020  00800142  00800142  0000054a  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000054a  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  0000057c  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000060  00000000  00000000  000005b8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000d2f  00000000  00000000  00000618  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000008d3  00000000  00000000  00001347  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000004ba  00000000  00000000  00001c1a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000001dc  00000000  00000000  000020d4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000488  00000000  00000000  000022b0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000006ab  00000000  00000000  00002738  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000050  00000000  00000000  00002de3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	9f c0       	rjmp	.+318    	; 0x144 <__vector_1>
+   6:	00 00       	nop
+   8:	d8 c0       	rjmp	.+432    	; 0x1ba <__vector_2>
+   a:	00 00       	nop
+   c:	11 c1       	rjmp	.+546    	; 0x230 <__vector_3>
+   e:	00 00       	nop
+  10:	87 c1       	rjmp	.+782    	; 0x320 <__vector_4>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e4 e7       	ldi	r30, 0x74	; 116
+  a0:	f4 e0       	ldi	r31, 0x04	; 4
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a2 34       	cpi	r26, 0x42	; 66
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a2 e4       	ldi	r26, 0x42	; 66
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a2 36       	cpi	r26, 0x62	; 98
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	b7 d1       	rcall	.+878    	; 0x432 <main>
+  c4:	d5 c1       	rjmp	.+938    	; 0x470 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <cmd>:
+volatile char str4[1][16] = {{"be returned"}};  // 자리 반납 성공시 출력되는 안내문구
+
+
+
+void cmd(int command){
+	PORTF = command;
+  c8:	80 93 62 00 	sts	0x0062, r24	; 0x800062 <__TEXT_REGION_LENGTH__+0x7e0062>
+	PORTB = 0x04; // 데이터 통신 enable, lcd 위치 설정 명령
+  cc:	84 e0       	ldi	r24, 0x04	; 4
+  ce:	88 bb       	out	0x18, r24	; 24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  d0:	8f e9       	ldi	r24, 0x9F	; 159
+  d2:	9f e0       	ldi	r25, 0x0F	; 15
+  d4:	01 97       	sbiw	r24, 0x01	; 1
+  d6:	f1 f7       	brne	.-4      	; 0xd4 <cmd+0xc>
+  d8:	00 c0       	rjmp	.+0      	; 0xda <cmd+0x12>
+  da:	00 00       	nop
+	_delay_ms(1);
+	PORTB = 0x00; // 데이터 통신 disable
+  dc:	18 ba       	out	0x18, r1	; 24
+  de:	08 95       	ret
+
+000000e0 <data>:
+}
+void data(char str){
+	PORTF = str;
+  e0:	80 93 62 00 	sts	0x0062, r24	; 0x800062 <__TEXT_REGION_LENGTH__+0x7e0062>
+	PORTB = 0x05; // 데이터 통신 enable, 레지스터에 저장해놨던 위치에 값을 쓰는 명령
+  e4:	85 e0       	ldi	r24, 0x05	; 5
+  e6:	88 bb       	out	0x18, r24	; 24
+  e8:	8f e9       	ldi	r24, 0x9F	; 159
+  ea:	9f e0       	ldi	r25, 0x0F	; 15
+  ec:	01 97       	sbiw	r24, 0x01	; 1
+  ee:	f1 f7       	brne	.-4      	; 0xec <data+0xc>
+  f0:	00 c0       	rjmp	.+0      	; 0xf2 <data+0x12>
+  f2:	00 00       	nop
+	_delay_ms(1);
+	PORTB = 0x01; // 데이터 통신 disable
+  f4:	81 e0       	ldi	r24, 0x01	; 1
+  f6:	88 bb       	out	0x18, r24	; 24
+  f8:	08 95       	ret
+
+000000fa <display2>:
+}
+void display2(char*str){
+  fa:	cf 93       	push	r28
+  fc:	df 93       	push	r29
+  fe:	ec 01       	movw	r28, r24
+	cmd(0x80|0x40); // lcd 첫 위치 (1,0)
+ 100:	80 ec       	ldi	r24, 0xC0	; 192
+ 102:	90 e0       	ldi	r25, 0x00	; 0
+ 104:	e1 df       	rcall	.-62     	; 0xc8 <cmd>
+	int i = 0;
+	while (str[i] != '\0' )
+ 106:	88 81       	ld	r24, Y
+ 108:	88 23       	and	r24, r24
+ 10a:	29 f0       	breq	.+10     	; 0x116 <display2+0x1c>
+	{
+		data(str[i++]);
+ 10c:	21 96       	adiw	r28, 0x01	; 1
+ 10e:	e8 df       	rcall	.-48     	; 0xe0 <data>
+	PORTB = 0x01; // 데이터 통신 disable
+}
+void display2(char*str){
+	cmd(0x80|0x40); // lcd 첫 위치 (1,0)
+	int i = 0;
+	while (str[i] != '\0' )
+ 110:	89 91       	ld	r24, Y+
+ 112:	81 11       	cpse	r24, r1
+ 114:	fc cf       	rjmp	.-8      	; 0x10e <display2+0x14>
+	{
+		data(str[i++]);
+	}
+	
+}
+ 116:	df 91       	pop	r29
+ 118:	cf 91       	pop	r28
+ 11a:	08 95       	ret
+
+0000011c <display1>:
+void display1(char*str){
+ 11c:	cf 93       	push	r28
+ 11e:	df 93       	push	r29
+ 120:	ec 01       	movw	r28, r24
+	cmd(0x80); // lcd 첫 위치 (0,0)
+ 122:	80 e8       	ldi	r24, 0x80	; 128
+ 124:	90 e0       	ldi	r25, 0x00	; 0
+ 126:	d0 df       	rcall	.-96     	; 0xc8 <cmd>
+	int i = 0;
+	while (str[i] != '\0' )
+ 128:	88 81       	ld	r24, Y
+ 12a:	88 23       	and	r24, r24
+ 12c:	29 f0       	breq	.+10     	; 0x138 <display1+0x1c>
+	{
+		data(str[i++]);
+ 12e:	21 96       	adiw	r28, 0x01	; 1
+ 130:	d7 df       	rcall	.-82     	; 0xe0 <data>
+	
+}
+void display1(char*str){
+	cmd(0x80); // lcd 첫 위치 (0,0)
+	int i = 0;
+	while (str[i] != '\0' )
+ 132:	89 91       	ld	r24, Y+
+ 134:	81 11       	cpse	r24, r1
+ 136:	fc cf       	rjmp	.-8      	; 0x130 <display1+0x14>
+	{
+		data(str[i++]);
+	}
+	display2(str1[0]);
+ 138:	80 e3       	ldi	r24, 0x30	; 48
+ 13a:	91 e0       	ldi	r25, 0x01	; 1
+ 13c:	de df       	rcall	.-68     	; 0xfa <display2>
+}
+ 13e:	df 91       	pop	r29
+ 140:	cf 91       	pop	r28
+ 142:	08 95       	ret
+
+00000144 <__vector_1>:
+
+ISR(INT0_vect){ //좌측으로 이동 버튼
+ 144:	1f 92       	push	r1
+ 146:	0f 92       	push	r0
+ 148:	0f b6       	in	r0, 0x3f	; 63
+ 14a:	0f 92       	push	r0
+ 14c:	11 24       	eor	r1, r1
+ 14e:	0b b6       	in	r0, 0x3b	; 59
+ 150:	0f 92       	push	r0
+ 152:	2f 93       	push	r18
+ 154:	3f 93       	push	r19
+ 156:	4f 93       	push	r20
+ 158:	5f 93       	push	r21
+ 15a:	6f 93       	push	r22
+ 15c:	7f 93       	push	r23
+ 15e:	8f 93       	push	r24
+ 160:	9f 93       	push	r25
+ 162:	af 93       	push	r26
+ 164:	bf 93       	push	r27
+ 166:	ef 93       	push	r30
+ 168:	ff 93       	push	r31
+	cmd(0x10);// 커서를 왼쪽으로 움직임
+ 16a:	80 e1       	ldi	r24, 0x10	; 16
+ 16c:	90 e0       	ldi	r25, 0x00	; 0
+ 16e:	ac df       	rcall	.-168    	; 0xc8 <cmd>
+	index--;
+ 170:	80 91 40 01 	lds	r24, 0x0140	; 0x800140 <index>
+ 174:	90 91 41 01 	lds	r25, 0x0141	; 0x800141 <index+0x1>
+ 178:	01 97       	sbiw	r24, 0x01	; 1
+ 17a:	90 93 41 01 	sts	0x0141, r25	; 0x800141 <index+0x1>
+ 17e:	80 93 40 01 	sts	0x0140, r24	; 0x800140 <index>
+ 182:	2f ef       	ldi	r18, 0xFF	; 255
+ 184:	82 e5       	ldi	r24, 0x52	; 82
+ 186:	97 e0       	ldi	r25, 0x07	; 7
+ 188:	21 50       	subi	r18, 0x01	; 1
+ 18a:	80 40       	sbci	r24, 0x00	; 0
+ 18c:	90 40       	sbci	r25, 0x00	; 0
+ 18e:	e1 f7       	brne	.-8      	; 0x188 <__vector_1+0x44>
+ 190:	00 c0       	rjmp	.+0      	; 0x192 <__vector_1+0x4e>
+ 192:	00 00       	nop
+	_delay_ms(delay);
+}
+ 194:	ff 91       	pop	r31
+ 196:	ef 91       	pop	r30
+ 198:	bf 91       	pop	r27
+ 19a:	af 91       	pop	r26
+ 19c:	9f 91       	pop	r25
+ 19e:	8f 91       	pop	r24
+ 1a0:	7f 91       	pop	r23
+ 1a2:	6f 91       	pop	r22
+ 1a4:	5f 91       	pop	r21
+ 1a6:	4f 91       	pop	r20
+ 1a8:	3f 91       	pop	r19
+ 1aa:	2f 91       	pop	r18
+ 1ac:	0f 90       	pop	r0
+ 1ae:	0b be       	out	0x3b, r0	; 59
+ 1b0:	0f 90       	pop	r0
+ 1b2:	0f be       	out	0x3f, r0	; 63
+ 1b4:	0f 90       	pop	r0
+ 1b6:	1f 90       	pop	r1
+ 1b8:	18 95       	reti
+
+000001ba <__vector_2>:
+
+ISR(INT1_vect){//우측으로 이동 버튼
+ 1ba:	1f 92       	push	r1
+ 1bc:	0f 92       	push	r0
+ 1be:	0f b6       	in	r0, 0x3f	; 63
+ 1c0:	0f 92       	push	r0
+ 1c2:	11 24       	eor	r1, r1
+ 1c4:	0b b6       	in	r0, 0x3b	; 59
+ 1c6:	0f 92       	push	r0
+ 1c8:	2f 93       	push	r18
+ 1ca:	3f 93       	push	r19
+ 1cc:	4f 93       	push	r20
+ 1ce:	5f 93       	push	r21
+ 1d0:	6f 93       	push	r22
+ 1d2:	7f 93       	push	r23
+ 1d4:	8f 93       	push	r24
+ 1d6:	9f 93       	push	r25
+ 1d8:	af 93       	push	r26
+ 1da:	bf 93       	push	r27
+ 1dc:	ef 93       	push	r30
+ 1de:	ff 93       	push	r31
+	cmd(0x14); //커서를 오른쪽으로 움직임
+ 1e0:	84 e1       	ldi	r24, 0x14	; 20
+ 1e2:	90 e0       	ldi	r25, 0x00	; 0
+ 1e4:	71 df       	rcall	.-286    	; 0xc8 <cmd>
+	index++;
+ 1e6:	80 91 40 01 	lds	r24, 0x0140	; 0x800140 <index>
+ 1ea:	90 91 41 01 	lds	r25, 0x0141	; 0x800141 <index+0x1>
+ 1ee:	01 96       	adiw	r24, 0x01	; 1
+ 1f0:	90 93 41 01 	sts	0x0141, r25	; 0x800141 <index+0x1>
+ 1f4:	80 93 40 01 	sts	0x0140, r24	; 0x800140 <index>
+ 1f8:	2f ef       	ldi	r18, 0xFF	; 255
+ 1fa:	82 e5       	ldi	r24, 0x52	; 82
+ 1fc:	97 e0       	ldi	r25, 0x07	; 7
+ 1fe:	21 50       	subi	r18, 0x01	; 1
+ 200:	80 40       	sbci	r24, 0x00	; 0
+ 202:	90 40       	sbci	r25, 0x00	; 0
+ 204:	e1 f7       	brne	.-8      	; 0x1fe <__vector_2+0x44>
+ 206:	00 c0       	rjmp	.+0      	; 0x208 <__vector_2+0x4e>
+ 208:	00 00       	nop
+	_delay_ms(delay);
+}
+ 20a:	ff 91       	pop	r31
+ 20c:	ef 91       	pop	r30
+ 20e:	bf 91       	pop	r27
+ 210:	af 91       	pop	r26
+ 212:	9f 91       	pop	r25
+ 214:	8f 91       	pop	r24
+ 216:	7f 91       	pop	r23
+ 218:	6f 91       	pop	r22
+ 21a:	5f 91       	pop	r21
+ 21c:	4f 91       	pop	r20
+ 21e:	3f 91       	pop	r19
+ 220:	2f 91       	pop	r18
+ 222:	0f 90       	pop	r0
+ 224:	0b be       	out	0x3b, r0	; 59
+ 226:	0f 90       	pop	r0
+ 228:	0f be       	out	0x3f, r0	; 63
+ 22a:	0f 90       	pop	r0
+ 22c:	1f 90       	pop	r1
+ 22e:	18 95       	reti
+
+00000230 <__vector_3>:
+
+
+ISR(INT2_vect){//선택
+ 230:	1f 92       	push	r1
+ 232:	0f 92       	push	r0
+ 234:	0f b6       	in	r0, 0x3f	; 63
+ 236:	0f 92       	push	r0
+ 238:	11 24       	eor	r1, r1
+ 23a:	0b b6       	in	r0, 0x3b	; 59
+ 23c:	0f 92       	push	r0
+ 23e:	2f 93       	push	r18
+ 240:	3f 93       	push	r19
+ 242:	4f 93       	push	r20
+ 244:	5f 93       	push	r21
+ 246:	6f 93       	push	r22
+ 248:	7f 93       	push	r23
+ 24a:	8f 93       	push	r24
+ 24c:	9f 93       	push	r25
+ 24e:	af 93       	push	r26
+ 250:	bf 93       	push	r27
+ 252:	ef 93       	push	r30
+ 254:	ff 93       	push	r31
+	if(str1[0][index]=='0' && dd[index]==0){ //해당 값이 0이고 lcd에서 선택된 출력값도 0이면 실행
+ 256:	80 91 40 01 	lds	r24, 0x0140	; 0x800140 <index>
+ 25a:	90 91 41 01 	lds	r25, 0x0141	; 0x800141 <index+0x1>
+ 25e:	fc 01       	movw	r30, r24
+ 260:	e0 5d       	subi	r30, 0xD0	; 208
+ 262:	fe 4f       	sbci	r31, 0xFE	; 254
+ 264:	20 81       	ld	r18, Z
+ 266:	20 33       	cpi	r18, 0x30	; 48
+ 268:	a1 f5       	brne	.+104    	; 0x2d2 <__vector_3+0xa2>
+ 26a:	fc 01       	movw	r30, r24
+ 26c:	ee 0f       	add	r30, r30
+ 26e:	ff 1f       	adc	r31, r31
+ 270:	ee 5b       	subi	r30, 0xBE	; 190
+ 272:	fe 4f       	sbci	r31, 0xFE	; 254
+ 274:	20 81       	ld	r18, Z
+ 276:	31 81       	ldd	r19, Z+1	; 0x01
+ 278:	23 2b       	or	r18, r19
+ 27a:	59 f5       	brne	.+86     	; 0x2d2 <__vector_3+0xa2>
+		str1[0][index] ='1'; // lcd에 디스플레이 되는 값을 1로 변경
+ 27c:	fc 01       	movw	r30, r24
+ 27e:	e0 5d       	subi	r30, 0xD0	; 208
+ 280:	fe 4f       	sbci	r31, 0xFE	; 254
+ 282:	21 e3       	ldi	r18, 0x31	; 49
+ 284:	20 83       	st	Z, r18
+		dd[index-1] -= 1;
+ 286:	fc 01       	movw	r30, r24
+ 288:	ee 0f       	add	r30, r30
+ 28a:	ff 1f       	adc	r31, r31
+ 28c:	e0 5c       	subi	r30, 0xC0	; 192
+ 28e:	fe 4f       	sbci	r31, 0xFE	; 254
+ 290:	20 81       	ld	r18, Z
+ 292:	31 81       	ldd	r19, Z+1	; 0x01
+ 294:	21 50       	subi	r18, 0x01	; 1
+ 296:	31 09       	sbc	r19, r1
+ 298:	31 83       	std	Z+1, r19	; 0x01
+ 29a:	20 83       	st	Z, r18
+		dd[index] -= 1;
+ 29c:	fc 01       	movw	r30, r24
+ 29e:	ee 0f       	add	r30, r30
+ 2a0:	ff 1f       	adc	r31, r31
+ 2a2:	ee 5b       	subi	r30, 0xBE	; 190
+ 2a4:	fe 4f       	sbci	r31, 0xFE	; 254
+ 2a6:	20 81       	ld	r18, Z
+ 2a8:	31 81       	ldd	r19, Z+1	; 0x01
+ 2aa:	21 50       	subi	r18, 0x01	; 1
+ 2ac:	31 09       	sbc	r19, r1
+ 2ae:	31 83       	std	Z+1, r19	; 0x01
+ 2b0:	20 83       	st	Z, r18
+		dd[index+1] -= 1;
+ 2b2:	88 0f       	add	r24, r24
+ 2b4:	99 1f       	adc	r25, r25
+ 2b6:	fc 01       	movw	r30, r24
+ 2b8:	ec 5b       	subi	r30, 0xBC	; 188
+ 2ba:	fe 4f       	sbci	r31, 0xFE	; 254
+ 2bc:	80 81       	ld	r24, Z
+ 2be:	91 81       	ldd	r25, Z+1	; 0x01
+ 2c0:	01 97       	sbiw	r24, 0x01	; 1
+ 2c2:	91 83       	std	Z+1, r25	; 0x01
+ 2c4:	80 83       	st	Z, r24
+		display1(str2[0]); //굿
+ 2c6:	80 e2       	ldi	r24, 0x20	; 32
+ 2c8:	91 e0       	ldi	r25, 0x01	; 1
+ 2ca:	28 df       	rcall	.-432    	; 0x11c <display1>
+		PORTE=0b00000010; //초록불
+ 2cc:	82 e0       	ldi	r24, 0x02	; 2
+ 2ce:	83 b9       	out	0x03, r24	; 3
+ 2d0:	05 c0       	rjmp	.+10     	; 0x2dc <__vector_3+0xac>
+	}
+	else{
+		display1(str3[0]); //이미 선택된 자리 거나 그 주변에 앉지 못할때 bad출력
+ 2d2:	80 e1       	ldi	r24, 0x10	; 16
+ 2d4:	91 e0       	ldi	r25, 0x01	; 1
+ 2d6:	22 df       	rcall	.-444    	; 0x11c <display1>
+
+		PORTE=0b00000001; //빨간불
+ 2d8:	81 e0       	ldi	r24, 0x01	; 1
+ 2da:	83 b9       	out	0x03, r24	; 3
+ 2dc:	2f ef       	ldi	r18, 0xFF	; 255
+ 2de:	82 e5       	ldi	r24, 0x52	; 82
+ 2e0:	97 e0       	ldi	r25, 0x07	; 7
+ 2e2:	21 50       	subi	r18, 0x01	; 1
+ 2e4:	80 40       	sbci	r24, 0x00	; 0
+ 2e6:	90 40       	sbci	r25, 0x00	; 0
+ 2e8:	e1 f7       	brne	.-8      	; 0x2e2 <__vector_3+0xb2>
+ 2ea:	00 c0       	rjmp	.+0      	; 0x2ec <__vector_3+0xbc>
+ 2ec:	00 00       	nop
+	}
+	_delay_ms(delay);
+	index =15;  // 바뀐 자리 번호때문에 다시 lcd에 출력하게 되면 커서가 리셋됨으로 index도 리셋
+ 2ee:	8f e0       	ldi	r24, 0x0F	; 15
+ 2f0:	90 e0       	ldi	r25, 0x00	; 0
+ 2f2:	90 93 41 01 	sts	0x0141, r25	; 0x800141 <index+0x1>
+ 2f6:	80 93 40 01 	sts	0x0140, r24	; 0x800140 <index>
+}
+ 2fa:	ff 91       	pop	r31
+ 2fc:	ef 91       	pop	r30
+ 2fe:	bf 91       	pop	r27
+ 300:	af 91       	pop	r26
+ 302:	9f 91       	pop	r25
+ 304:	8f 91       	pop	r24
+ 306:	7f 91       	pop	r23
+ 308:	6f 91       	pop	r22
+ 30a:	5f 91       	pop	r21
+ 30c:	4f 91       	pop	r20
+ 30e:	3f 91       	pop	r19
+ 310:	2f 91       	pop	r18
+ 312:	0f 90       	pop	r0
+ 314:	0b be       	out	0x3b, r0	; 59
+ 316:	0f 90       	pop	r0
+ 318:	0f be       	out	0x3f, r0	; 63
+ 31a:	0f 90       	pop	r0
+ 31c:	1f 90       	pop	r1
+ 31e:	18 95       	reti
+
+00000320 <__vector_4>:
+
+
+
+ISR(INT3_vect){// 반납
+ 320:	1f 92       	push	r1
+ 322:	0f 92       	push	r0
+ 324:	0f b6       	in	r0, 0x3f	; 63
+ 326:	0f 92       	push	r0
+ 328:	11 24       	eor	r1, r1
+ 32a:	0b b6       	in	r0, 0x3b	; 59
+ 32c:	0f 92       	push	r0
+ 32e:	2f 93       	push	r18
+ 330:	3f 93       	push	r19
+ 332:	4f 93       	push	r20
+ 334:	5f 93       	push	r21
+ 336:	6f 93       	push	r22
+ 338:	7f 93       	push	r23
+ 33a:	8f 93       	push	r24
+ 33c:	9f 93       	push	r25
+ 33e:	af 93       	push	r26
+ 340:	bf 93       	push	r27
+ 342:	ef 93       	push	r30
+ 344:	ff 93       	push	r31
+	if(str1[0][index]=='1'&& dd[index]==-1){//해당 값이 -1이고 lcd에 선택된 출력값도 1이면 실행
+ 346:	80 91 40 01 	lds	r24, 0x0140	; 0x800140 <index>
+ 34a:	90 91 41 01 	lds	r25, 0x0141	; 0x800141 <index+0x1>
+ 34e:	fc 01       	movw	r30, r24
+ 350:	e0 5d       	subi	r30, 0xD0	; 208
+ 352:	fe 4f       	sbci	r31, 0xFE	; 254
+ 354:	20 81       	ld	r18, Z
+ 356:	21 33       	cpi	r18, 0x31	; 49
+ 358:	09 f0       	breq	.+2      	; 0x35c <__vector_4+0x3c>
+ 35a:	44 c0       	rjmp	.+136    	; 0x3e4 <__vector_4+0xc4>
+ 35c:	fc 01       	movw	r30, r24
+ 35e:	ee 0f       	add	r30, r30
+ 360:	ff 1f       	adc	r31, r31
+ 362:	ee 5b       	subi	r30, 0xBE	; 190
+ 364:	fe 4f       	sbci	r31, 0xFE	; 254
+ 366:	20 81       	ld	r18, Z
+ 368:	31 81       	ldd	r19, Z+1	; 0x01
+ 36a:	2f 3f       	cpi	r18, 0xFF	; 255
+ 36c:	3f 4f       	sbci	r19, 0xFF	; 255
+ 36e:	d1 f5       	brne	.+116    	; 0x3e4 <__vector_4+0xc4>
+		str1[0][index] ='0';
+ 370:	fc 01       	movw	r30, r24
+ 372:	e0 5d       	subi	r30, 0xD0	; 208
+ 374:	fe 4f       	sbci	r31, 0xFE	; 254
+ 376:	20 e3       	ldi	r18, 0x30	; 48
+ 378:	20 83       	st	Z, r18
+		dd[index-1] += 1;
+ 37a:	fc 01       	movw	r30, r24
+ 37c:	ee 0f       	add	r30, r30
+ 37e:	ff 1f       	adc	r31, r31
+ 380:	e0 5c       	subi	r30, 0xC0	; 192
+ 382:	fe 4f       	sbci	r31, 0xFE	; 254
+ 384:	20 81       	ld	r18, Z
+ 386:	31 81       	ldd	r19, Z+1	; 0x01
+ 388:	2f 5f       	subi	r18, 0xFF	; 255
+ 38a:	3f 4f       	sbci	r19, 0xFF	; 255
+ 38c:	31 83       	std	Z+1, r19	; 0x01
+ 38e:	20 83       	st	Z, r18
+		dd[index] += 1;
+ 390:	fc 01       	movw	r30, r24
+ 392:	ee 0f       	add	r30, r30
+ 394:	ff 1f       	adc	r31, r31
+ 396:	ee 5b       	subi	r30, 0xBE	; 190
+ 398:	fe 4f       	sbci	r31, 0xFE	; 254
+ 39a:	20 81       	ld	r18, Z
+ 39c:	31 81       	ldd	r19, Z+1	; 0x01
+ 39e:	2f 5f       	subi	r18, 0xFF	; 255
+ 3a0:	3f 4f       	sbci	r19, 0xFF	; 255
+ 3a2:	31 83       	std	Z+1, r19	; 0x01
+ 3a4:	20 83       	st	Z, r18
+		dd[index+1] += 1;
+ 3a6:	88 0f       	add	r24, r24
+ 3a8:	99 1f       	adc	r25, r25
+ 3aa:	fc 01       	movw	r30, r24
+ 3ac:	ec 5b       	subi	r30, 0xBC	; 188
+ 3ae:	fe 4f       	sbci	r31, 0xFE	; 254
+ 3b0:	80 81       	ld	r24, Z
+ 3b2:	91 81       	ldd	r25, Z+1	; 0x01
+ 3b4:	01 96       	adiw	r24, 0x01	; 1
+ 3b6:	91 83       	std	Z+1, r25	; 0x01
+ 3b8:	80 83       	st	Z, r24
+		display1(str4[0]);
+ 3ba:	80 e0       	ldi	r24, 0x00	; 0
+ 3bc:	91 e0       	ldi	r25, 0x01	; 1
+ 3be:	ae de       	rcall	.-676    	; 0x11c <display1>
+		PORTE=0b00000010; //초록불
+ 3c0:	82 e0       	ldi	r24, 0x02	; 2
+ 3c2:	83 b9       	out	0x03, r24	; 3
+ 3c4:	8f ef       	ldi	r24, 0xFF	; 255
+ 3c6:	92 e5       	ldi	r25, 0x52	; 82
+ 3c8:	27 e0       	ldi	r18, 0x07	; 7
+ 3ca:	81 50       	subi	r24, 0x01	; 1
+ 3cc:	90 40       	sbci	r25, 0x00	; 0
+ 3ce:	20 40       	sbci	r18, 0x00	; 0
+ 3d0:	e1 f7       	brne	.-8      	; 0x3ca <__vector_4+0xaa>
+ 3d2:	00 c0       	rjmp	.+0      	; 0x3d4 <__vector_4+0xb4>
+ 3d4:	00 00       	nop
+		_delay_ms(delay);
+		index=15;
+ 3d6:	8f e0       	ldi	r24, 0x0F	; 15
+ 3d8:	90 e0       	ldi	r25, 0x00	; 0
+ 3da:	90 93 41 01 	sts	0x0141, r25	; 0x800141 <index+0x1>
+ 3de:	80 93 40 01 	sts	0x0140, r24	; 0x800140 <index>
+ 3e2:	14 c0       	rjmp	.+40     	; 0x40c <__LOCK_REGION_LENGTH__+0xc>
+	}
+	else{ display1(str3[0]); // 반납이 불가능한 자리 선택 시
+ 3e4:	80 e1       	ldi	r24, 0x10	; 16
+ 3e6:	91 e0       	ldi	r25, 0x01	; 1
+ 3e8:	99 de       	rcall	.-718    	; 0x11c <display1>
+		PORTE=0b00000001; //빨간불
+ 3ea:	81 e0       	ldi	r24, 0x01	; 1
+ 3ec:	83 b9       	out	0x03, r24	; 3
+ 3ee:	4f ef       	ldi	r20, 0xFF	; 255
+ 3f0:	82 e5       	ldi	r24, 0x52	; 82
+ 3f2:	97 e0       	ldi	r25, 0x07	; 7
+ 3f4:	41 50       	subi	r20, 0x01	; 1
+ 3f6:	80 40       	sbci	r24, 0x00	; 0
+ 3f8:	90 40       	sbci	r25, 0x00	; 0
+ 3fa:	e1 f7       	brne	.-8      	; 0x3f4 <__vector_4+0xd4>
+ 3fc:	00 c0       	rjmp	.+0      	; 0x3fe <__vector_4+0xde>
+ 3fe:	00 00       	nop
+		_delay_ms(delay);
+		index=15; // 바뀐 자리 번호때문에 다시 lcd에 출력하게 되면 커서가 리셋됨으로 index도 리셋
+ 400:	8f e0       	ldi	r24, 0x0F	; 15
+ 402:	90 e0       	ldi	r25, 0x00	; 0
+ 404:	90 93 41 01 	sts	0x0141, r25	; 0x800141 <index+0x1>
+ 408:	80 93 40 01 	sts	0x0140, r24	; 0x800140 <index>
+	}
+}
+ 40c:	ff 91       	pop	r31
+ 40e:	ef 91       	pop	r30
+ 410:	bf 91       	pop	r27
+ 412:	af 91       	pop	r26
+ 414:	9f 91       	pop	r25
+ 416:	8f 91       	pop	r24
+ 418:	7f 91       	pop	r23
+ 41a:	6f 91       	pop	r22
+ 41c:	5f 91       	pop	r21
+ 41e:	4f 91       	pop	r20
+ 420:	3f 91       	pop	r19
+ 422:	2f 91       	pop	r18
+ 424:	0f 90       	pop	r0
+ 426:	0b be       	out	0x3b, r0	; 59
+ 428:	0f 90       	pop	r0
+ 42a:	0f be       	out	0x3f, r0	; 63
+ 42c:	0f 90       	pop	r0
+ 42e:	1f 90       	pop	r1
+ 430:	18 95       	reti
+
+00000432 <main>:
+
+
+
+
+int main(){
+	DDRB=0xff;
+ 432:	8f ef       	ldi	r24, 0xFF	; 255
+ 434:	87 bb       	out	0x17, r24	; 23
+	DDRF=0xff;
+ 436:	80 93 61 00 	sts	0x0061, r24	; 0x800061 <__TEXT_REGION_LENGTH__+0x7e0061>
+	DDRD=0b00000000;
+ 43a:	11 ba       	out	0x11, r1	; 17
+	DDRE=0xff;
+ 43c:	82 b9       	out	0x02, r24	; 2
+	PORTD =0xff;
+ 43e:	82 bb       	out	0x12, r24	; 18
+	
+
+	
+	EICRA = 0b10000000; //인터럽트 트리거 방식 설정
+ 440:	80 e8       	ldi	r24, 0x80	; 128
+ 442:	80 93 6a 00 	sts	0x006A, r24	; 0x80006a <__TEXT_REGION_LENGTH__+0x7e006a>
+	EIMSK = 0b00001111; //인터럽트 허용 설정
+ 446:	8f e0       	ldi	r24, 0x0F	; 15
+ 448:	89 bf       	out	0x39, r24	; 57
+	SREG |= 0x80; //전체 인트럽트 허가
+ 44a:	8f b7       	in	r24, 0x3f	; 63
+ 44c:	80 68       	ori	r24, 0x80	; 128
+ 44e:	8f bf       	out	0x3f, r24	; 63
+
+	
+	cmd(0x38); // 8bit 데이터 버스 사용
+ 450:	88 e3       	ldi	r24, 0x38	; 56
+ 452:	90 e0       	ldi	r25, 0x00	; 0
+ 454:	39 de       	rcall	.-910    	; 0xc8 <cmd>
+	cmd(0x0D); // Display clear
+ 456:	8d e0       	ldi	r24, 0x0D	; 13
+ 458:	90 e0       	ldi	r25, 0x00	; 0
+ 45a:	36 de       	rcall	.-916    	; 0xc8 <cmd>
+	cmd(0x0e); // Display on Cursor on
+ 45c:	8e e0       	ldi	r24, 0x0E	; 14
+ 45e:	90 e0       	ldi	r25, 0x00	; 0
+ 460:	33 de       	rcall	.-922    	; 0xc8 <cmd>
+	cmd(0x06); // Entry Mode
+ 462:	86 e0       	ldi	r24, 0x06	; 6
+ 464:	90 e0       	ldi	r25, 0x00	; 0
+ 466:	30 de       	rcall	.-928    	; 0xc8 <cmd>
+	display1(str2[0]);
+ 468:	80 e2       	ldi	r24, 0x20	; 32
+ 46a:	91 e0       	ldi	r25, 0x01	; 1
+ 46c:	57 de       	rcall	.-850    	; 0x11c <display1>
+ 46e:	ff cf       	rjmp	.-2      	; 0x46e <main+0x3c>
+
+00000470 <_exit>:
+ 470:	f8 94       	cli
+
+00000472 <__stop_program>:
+ 472:	ff cf       	rjmp	.-2      	; 0x472 <__stop_program>
